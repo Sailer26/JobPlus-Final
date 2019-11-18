@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Job Plus</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/flatpickr.min.css">
+	<link rel="stylesheet" type="text/css" href="css/line-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/line-awesome-font-awesome.min.css">
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
+
+<body>
+	
+
+	<div class="wrapper">
+		<header>
+			<div class="container">
+				<div class="header-data">
+					<div class="logo">
+						<a href="index.html" title=""><img src="images/logo.png" alt=""></a>
+					</div><!--logo end-->
+					<div class="search-bar">
+						<form>
+							<input type="text" name="search" placeholder="Cerca...">
+							<button type="submit"><i class="la la-search"></i></button>
+						</form>
+					</div><!--search-bar end-->
+					<nav>
+						<ul>
+							<li>
+								<a href="index.html" title="">
+									<span><img src="images/icon1.png" alt=""></span>
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="companies.html" title="">
+									<span><img src="images/icon2.png" alt=""></span>
+									Aziende
+								</a>
+							</li>
+							<li>
+								<a href="user-profile.html" title="">
+									<span><img src="images/icon4.png" alt=""></span>
+									Profilo
+								</a>
+							</li>
+							<li>
+								<a href="jobs.html" title="">
+									<span><img src="images/icon5.png" alt=""></span>
+									Offerte di lavoro
+								</a>
+							</li>
+							<li>
+								<a href="#" title="" class="not-box-openm">
+									<span><img src="images/icon6.png" alt=""></span>
+									Candidature
+								</a>
+								<div class="notification-box msg" id="message">
+									<div class="nt-title">
+										<h4></h4>
+										<a href="#" title="">Rimuovi tutti</a>
+									</div>
+									<div class="nott-list">
+										<div class="notfication-details">
+							  				<div class="noty-user-img">
+							  					<img src="images/resources/ny-img1.png" alt="">
+							  				</div>
+							  				<div class="notification-info">
+							  					<h3><a href="messages.html" title="">Azienda 1</a> </h3>
+							  					<p>Sei stato scartato!</p>
+							  					<span>2 min fa</span>
+							  				</div><!--notification-info -->
+						  				</div>
+						  				<div class="notfication-details">
+							  				<div class="noty-user-img">
+							  					<img src="images/resources/ny-img2.png" alt="">
+							  				</div>
+							  				<div class="notification-info">
+							  					<h3><a href="messages.html" title="">Azienda 2</a></h3>
+							  					<p>La tua candidatura é stata presa in considerazione.</p>
+							  					<span>2 min fa</span>
+							  				</div><!--notification-info -->
+						  				</div>
+						  				<div class="notfication-details">
+							  				<div class="noty-user-img">
+							  					<img src="images/resources/ny-img3.png" alt="">
+							  				</div>
+							  				<div class="notification-info">
+							  					<h3><a href="messages.html" title="">Azienda 3</a></h3>
+							  					<p>La tua candidatura deve ancora venir valutata.</p>
+							  					<span>2 min fa</span>
+							  				</div><!--notification-info -->
+						  				</div>
+						  				<div class="view-all-nots">
+						  					<a href="messages.html" title="">Visualizza tutte le candidature</a>
+						  				</div>
+									</div><!--nott-list end-->
+								</div><!--notification-box end-->
+							</li>
+							<li>
+								<a href="#" title="" class="not-box-open">
+									<span><img src="images/icon7.png" alt=""></span>
+									Notifiche
+								</a>
+								<div class="notification-box noti" id="notification">
+									<div class="nt-title">
+										<h4></h4>
+										<a href="#" title="">Rimuovi tutto</a>
+									</div>
+									<div class="nott-list">
+										<div class="notfication-details">
+							  				<div class="noty-user-img">
+							  					<img src="images/resources/ny-img1.png" alt="">
+							  				</div>
+							  				<div class="notification-info">
+							  					<h3><a href="#" title="">Azienda 1</a> Ha pubblicato un nuovo posto di lavoro.</h3>
+							  					<span>2 min ago</span>
+							  				</div><!--notification-info -->
+						  				</div>
+						  				<div class="notfication-details">
+							  				<div class="noty-user-img">
+							  					<img src="images/resources/ny-img2.png" alt="">
+							  				</div>
+							  				<div class="notification-info">
+							  					<h3><a href="#" title="">Azienda 2</a> Ha pubblicato un nuovo posto di lavoro.</h3>
+							  					<span>2 min ago</span>
+							  				</div><!--notification-info -->
+						  				</div>
+						  				<div class="notfication-details">
+							  				<div class="noty-user-img">
+							  					<img src="images/resources/ny-img3.png" alt="">
+							  				</div>
+							  				<div class="notification-info">
+							  					<h3><a href="#" title="">Azienda 3</a> Ha pubblicato un nuovo posto di lavoro.</h3>
+							  					<span>2 min ago</span>
+							  				</div><!--notification-info -->
+						  				</div>
+						  				<div class="notfication-details">
+							  				<div class="noty-user-img">
+							  					<img src="images/resources/ny-img2.png" alt="">
+							  				</div>
+							  				<div class="notification-info">
+							  					<h3><a href="#" title="">Azienda 4</a> Ha pubblicato un nuovo posto di lavoro.</h3>
+							  					<span>2 min ago</span>
+							  				</div><!--notification-info -->
+						  				</div>
+						  				<div class="view-all-nots">
+						  					<a href="#" title="">Visualizza tutte le notifiche</a>
+						  				</div>
+									</div><!--nott-list end-->
+								</div><!--notification-box end-->
+							</li>
+						</ul>
+					</nav><!--nav end-->
+					<div class="menu-btn">
+						<a href="#" title=""><i class="fa fa-bars"></i></a>
+					</div><!--menu-btn end-->
+					<div class="user-account">
+						<div class="user-info">
+							<img src="images/resources/user.png" alt="">
+							<a href="#" title="">John</a>
+							<i class="la la-sort-down"></i>
+						</div>
+						<div class="user-account-settingss" id="users">
+							<h3>Status attuale</h3>
+							<ul class="on-off-status">
+								<li>
+									<div class="fgt-sec">
+										<input type="radio" name="cc" id="c5">
+										<label for="c5">
+											<span></span>
+										</label>
+										<small>Impiegato</small>
+									</div>
+								</li>
+								<li>
+									<div class="fgt-sec">
+										<input type="radio" name="cc" id="c6">
+										<label for="c6">
+											<span></span>
+										</label>
+										<small>Disoccupato</small>
+									</div>
+								</li>
+							</ul>
+							<h3>Impostazioni</h3>
+							<ul class="us-links">
+								<li><a href="profile-account-setting.html" title="">Impostazioni account</a></li>
+								<li><a href="#" title="">Privacy</a></li>
+								<li><a href="#" title="">Faqs</a></li>
+								<li><a href="#" title="">Termini e condizioni</a></li>
+							</ul>
+							<h3 class="tc"><a href="sign-in.html" title="">Logout</a></h3>
+						</div><!--user-account-settingss end-->
+					</div>
+				</div><!--header-data end-->
+			</div>
+		</header><!--header end-->		
+
+
+		<section class="cover-sec">
+			<img src="images/resources/cover-img.jpg" alt="">
+			<div class="add-pic-box">
+				<div class="container">
+					<div class="row no-gutters">
+						<div class="col-lg-12 col-sm-12">					
+							<input type="file" id="file">
+							<label for="file">Cambia immagine copertina</label>				
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<main>
+			<div class="main-section">
+				<div class="container">
+					<div class="main-section-data">
+						<div class="row">
+							<div class="col-lg-3">
+								<div class="main-left-sidebar">
+									<div class="user_profile">
+										<div class="user-pro-img">
+											<img src="images/resources/user-pro-img.png" alt="">
+											<div class="add-dp" id="OpenImgUpload">
+												<input type="file" id="file">
+												<label for="file"><i class="fas fa-camera"></i></label>												
+											</div>
+										</div><!--user-pro-img end-->
+										<div class="user_pro_status">
+											<ul class="flw-status">
+												<li>
+													<span>Aziende seguite</span>
+													<b>34</b>
+												</li>
+												
+											</ul>
+										</div><!--user_pro_status end-->
+										<ul class="social_links">
+											<li><a href="#" title=""><i class="la la-globe"></i> www.example.com</a></li>
+											<li><a href="#" title=""><i class="fa fa-facebook-square"></i> Http://www.facebook.com/john...</a></li>
+											<li><a href="#" title=""><i class="fa fa-twitter"></i> Http://www.Twitter.com/john...</a></li>
+											<li><a href="#" title=""><i class="fa fa-google-plus-square"></i> Http://www.googleplus.com/john...</a></li>
+											<li><a href="#" title=""><i class="fa fa-behance-square"></i> Http://www.behance.com/john...</a></li>
+											<li><a href="#" title=""><i class="fa fa-pinterest"></i> Http://www.pinterest.com/john...</a></li>
+											<li><a href="#" title=""><i class="fa fa-instagram"></i> Http://www.instagram.com/john...</a></li>
+											<li><a href="#" title=""><i class="fa fa-youtube"></i> Http://www.youtube.com/john...</a></li>
+										</ul>
+									</div><!--user_profile end-->
+									
+								</div><!--main-left-sidebar end-->
+							</div>
+							<div class="col-lg-9">
+								<div class="main-ws-sec">
+									<div class="user-tab-sec rewivew">
+										<h3>John Doe - Disoccupato</h3>
+										<div class="star-descp">
+											<span>Titolo professionale</span>
+											
+										</div><!--star-descp end-->
+                                            <div class="tab-feed st2 settingjb">
+											<ul>
+												<li data-tab="feed-dd" class="active">
+													<a href="#" title="">
+														<img src="images/ic1.png" alt="">
+														<span>Curriculum</span>
+													</a>
+												</li>
+												<li data-tab="info-dd">
+													<a href="#" title="">
+														<img src="images/ic2.png" alt="">
+														<span>Informazioni</span>
+													</a>
+												</li>
+												<li data-tab="saved-jobs">
+													<a href="#" title="">
+														<img src="images/ic4.png" alt="">
+														<span>Lavoro</span>
+													</a>
+												</li>
+												<li data-tab="my-bids">
+													<a href="#" title="">
+														<img src="images/ic5.png" alt="">
+														<span>Scuole</span>
+													</a>
+												</li>
+												<!--<li data-tab="portfolio-dd">
+													<a href="#" title="">
+														<img src="images/ic3.png" alt="">
+														<span>Portfolio</span>
+													</a>
+												</li>-->
+												
+											</ul>
+										</div><!-- tab-feed end-->
+									</div><!--user-tab-sec end-->
+									<div class="product-feed-tab" id="saved-jobs">
+										<ul class="nav nav-tabs" id="myTab" role="tablist">
+                                           <li class="nav-item">
+                                             <a class="nav-link active" id="mange-tab" data-toggle="tab" href="#mange" role="tab" aria-controls="home" aria-selected="true">Esperienze lavorative</a>
+                                           </li>
+                                           <li class="nav-item">
+                                             <a class="nav-link" id="saved-tab" data-toggle="tab" href="#saved" role="tab" aria-controls="profile" aria-selected="false">Conoscenze professionali</a>
+                                           </li>
+                                         </ul>
+                                         <div class="tab-content" id="myTabContent">
+                                         <div class="tab-pane fade show active" id="mange" role="tabpanel" aria-labelledby="mange-tab">
+                                                <div class="posts-bar">
+                                                    <div class="post-bar bgclr">
+                                                        <div class="wordpressdevlp">
+                                                            <h2><a href="#" class="exp-bx-open" title=""><i class="fa fa-pencil"></i></a>Azienda 1</h2>
+                                                            <h2><a href="#" title="" class="bid_now">Full time</a> - Senior Wordpress Developer</h2>
+															
+                                                            <p><i class="la la-clock-o"></i>Dal 31 dicembre 2018 - Attualmente</p>
+															
+                                                        <div class="devepbtn saved-btn">
+                                                            <a class="clrbtn" href="#">Visualizza certificato</a>
+                                                        </div>
+                                                        </div>
+                                                      <br>
+                                                    </div>
+                                                </div>
+                                                <div class="posts-bar">
+                                                    <div class="post-bar bgclr">
+                                                        <div class="wordpressdevlp">
+                                                            <h2><a href="#" class="exp-bx-open" title=""><i class="fa fa-pencil"></i></a>Azienda 2</h2>
+                                                            <h2><a href="#" title="" class="bid_now">Full time</a> - Senior Wordpress Developer</h2>
+															
+                                                            <p><i class="la la-clock-o"></i>Dal 31 dicembre 2018 - Attualmente</p>
+															
+                                                        <div class="devepbtn saved-btn">
+                                                            <a class="clrbtn" href="#">Visualizza certificato</a>
+                                                        </div>
+                                                        </div>
+                                                      <br>
+                                                    </div>
+                                                </div>
+                                                <div class="posts-bar">
+                                                    <div class="post-bar bgclr">
+                                                        <div class="wordpressdevlp">
+                                                            <h2><a href="#" class="exp-bx-open" title=""><i class="fa fa-pencil"></i></a> Azienda 3</h2>
+                                                            <h2><a href="#" title="" class="bid_now">Full time</a> - Senior Wordpress Developer</h2>
+															
+                                                            <p><i class="la la-clock-o"></i>Dal 31 dicembre 2018 - Attualmente</p>
+															
+                                                        <div class="devepbtn saved-btn">
+                                                            <a class="clrbtn" href="#">Visualizza certificato</a>
+                                                        </div>
+                                                        </div>
+                                                      <br>
+                                                    </div>
+                                                </div>
+												
+												 <div class="posts-bar">
+                                                    <div class="post-bar bgclr">
+                                                        <div class="wordpressdevlp">
+                                                           
+                                                            <center><a href="#" class="exp-bx-open" title=""><i class="fa fa-plus-square"></i></a></center>
+															
+                                                        </div>
+                                                   
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="saved" role="tabpanel" aria-labelledby="saved-tab">
+                                                <div class="post-bar">
+                                                    <div class="p-all saved-post">
+                                                        <div class="usy-dt">
+                                                            <div class="wordpressdevlp">
+                                                                <h2><a href="#" class="exp-bx-open" title=""><i class="fa fa-pencil"></i></a> Informatica - <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h2>
+                                                              
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="savedjob-info saved-info">
+                                                        <div class="devepbtn saved-btn">
+														Descrizione conoscenze professionali in ambito informatica
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                                <div class="post-bar">
+                                                    <div class="p-all saved-post">
+                                                        <div class="usy-dt">
+                                                            <div class="wordpressdevlp">
+                                                                <h2><a href="#" class="exp-bx-open" title=""><i class="fa fa-pencil"></i></a> Contabilità - <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h2>
+                                                              
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="savedjob-info saved-info">
+                                                        <div class="devepbtn saved-btn">
+														Descrizione conoscenze professionali in ambito contabilità
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                                <div class="post-bar">
+                                                    <div class="p-all saved-post">
+                                                        <div class="usy-dt">
+                                                            <div class="wordpressdevlp">
+                                                                <h2><a href="#" class="exp-bx-open" title=""><i class="fa fa-pencil"></i></a> Meccanica - <i class="fa fa-star"></i><i class="fa fa-star"></i></h2>
+                                                              
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="savedjob-info saved-info">
+                                                        <div class="devepbtn saved-btn">
+														Descrizione conoscenze professionali in ambito meccanica
+                                                        </div>
+                                                    </ul>
+                                                </div>
+												
+												 <div class="posts-bar">
+                                                    <div class="post-bar bgclr">
+                                                        <div class="wordpressdevlp">
+                                                           
+                                                            <center><a href="#" class="exp-bx-open" title=""><i class="fa fa-plus-square"></i></a></center>
+															
+                                                        </div>
+                                                   
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                         </div>
+									</div>
+									<div class="product-feed-tab current" id="feed-dd">
+										<div class="posts-section">
+											<div class="post-bar">
+												<div class="post_topbar">
+													<div class="usy-dt">
+														<div class="wordpressdevlp">
+															<h2><a href="#" class="exp-bx-open" title=""><i class="fa fa-pencil"></i></a> Video curriculum</h2>
+														
+														</div>
+													</div>
+												</div>
+												
+												<div class="job_descp">
+													
+													Video
+													
+												</div>
+												<div class="job-status-bar">
+													<a href="#"><i class="fas fa-eye"></i>Visualizzato 50</a>
+												</div>
+											</div><!--post-bar end-->
+											
+										</div><!--posts-section end-->
+									</div><!--product-feed-tab end-->
+
+									<div class="product-feed-tab" id="my-bids">
+										<div class="tab-pane fade show active" id="mange" role="tabpanel" aria-labelledby="mange-tab">
+										
+                                                <div class="posts-bar">
+                                                    <div class="post-bar bgclr">
+                                                        <div class="wordpressdevlp">
+                                                            <h2><a href="#" title="" class="ed-box-open"><i class="fa fa-pencil"></i></a> Scuola elementare</h2>
+                                                            <h2></h2>
+															
+                                                            <p><i class="la la-clock-o"></i>2001 - 2007</p>
+                                                            <p><i class="la la-building"></i>Scuole elementari Grono</p>
+                                                            <p><i class="la la-location-arrow"></i>6537 Grono</p>
+															
+                                                        <div class="devepbtn saved-btn">
+                                                            <a class="clrbtn" href="#">Visualizza pagella</a>
+                                                        </div>
+                                                        </div>
+                                                      <br>
+                                                    </div>
+                                                </div>
+                                                <div class="posts-bar">
+                                                    <div class="post-bar bgclr">
+                                                        <div class="wordpressdevlp">
+                                                            <h2><a href="#" title="" class="ed-box-open"><i class="fa fa-pencil"></i></a> Scuola media </h2>
+                                                            <h2></h2>
+															
+                                                            <p><i class="la la-clock-o"></i>2001 - 2007</p>
+                                                            <p><i class="la la-building"></i>Scuole medie Roveredo</p>
+                                                            <p><i class="la la-location-arrow"></i>6537 Grono</p>
+															
+                                                        <div class="devepbtn saved-btn">
+                                                            <a class="clrbtn" href="#">Visualizza pagella</a>
+                                                        </div>
+                                                        </div>
+                                                      <br>
+                                                    </div>
+                                                </div>
+                                                <div class="posts-bar">
+                                                    <div class="post-bar bgclr">
+                                                        <div class="wordpressdevlp">
+                                                            <h2><a href="#" title="" class="ed-box-open"><i class="fa fa-pencil"></i></a> Aprendistato - Informatico tecnico dei sistemi </h2>
+                                                            <h2></h2>
+															
+                                                            <p><i class="la la-clock-o"></i>2001 - 2007</p>
+                                                            <p><i class="la la-building"></i>Spai locarno</p>
+                                                            <p><i class="la la-location-arrow"></i>6537 Grono</p>
+															
+                                                        <div class="devepbtn saved-btn">
+                                                            <a class="clrbtn" href="#">Visualizza pagella</a>
+                                                            <a class="clrbtn" href="#">Visualizza diploma</a>
+                                                        </div>
+                                                        </div>
+                                                      <br>
+                                                    </div>
+                                                </div>
+												 <div class="posts-bar">
+                                                    <div class="post-bar bgclr">
+                                                        <div class="wordpressdevlp">
+                                                           
+                                                            <center><a href="#" class="ed-box-open" title=""><i class="fa fa-plus-square"></i></a></center>
+															
+                                                        </div>
+                                                   
+                                                    </div>
+                                                </div>
+                                            </div>
+									</div><!--product-feed-tab end-->
+									
+
+									<div class="product-feed-tab" id="info-dd">
+										<div class="user-profile-ov">
+											<h3><a href="#" title="" class="overview-open">Chi sono</a> <a href="#" title="" class="overview-open"><i class="fa fa-pencil"></i></a></h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor aliquam felis, nec condimentum ipsum commodo id. Vivamus sit amet augue nec urna efficitur tincidunt. Vivamus consectetur aliquam lectus commodo viverra. Nunc eu augue nec arcu efficitur faucibus. Aliquam accumsan ac magna convallis bibendum. Quisque laoreet augue eget augue fermentum scelerisque. Vivamus dignissim mollis est dictum blandit. Nam porta auctor neque sed congue. Nullam rutrum eget ex at maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget vestibulum lorem.</p>
+										</div><!--user-profile-ov end-->
+										
+										<div class="user-profile-ov">
+											<h3><a href="#" title="" class="overview-open">Hobby</a> <a href="#" title="" class="overview-open"><i class="fa fa-pencil"></i></a></h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor aliquam felis, nec condimentum ipsum commodo id. Vivamus sit amet augue nec urna efficitur tincidunt. Vivamus consectetur aliquam lectus commodo viverra. Nunc eu augue nec arcu efficitur faucibus. Aliquam accumsan ac magna convallis bibendum. Quisque laoreet augue eget augue fermentum scelerisque. Vivamus dignissim mollis est dictum blandit. Nam porta auctor neque sed congue. Nullam rutrum eget ex at maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget vestibulum lorem.</p>
+										</div><!--user-profile-ov end-->
+										<div class="user-profile-ov">
+											<h3><a href="#" title="" class="overview-open">Interessi</a> <a href="#" title="" class="overview-open"><i class="fa fa-pencil"></i></a></h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor aliquam felis, nec condimentum ipsum commodo id. Vivamus sit amet augue nec urna efficitur tincidunt. Vivamus consectetur aliquam lectus commodo viverra. Nunc eu augue nec arcu efficitur faucibus. Aliquam accumsan ac magna convallis bibendum. Quisque laoreet augue eget augue fermentum scelerisque. Vivamus dignissim mollis est dictum blandit. Nam porta auctor neque sed congue. Nullam rutrum eget ex at maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget vestibulum lorem.</p>
+										</div><!--user-profile-ov end-->
+										<div class="user-profile-ov">
+											<h3><a href="#" title="" class="overview-open">Recapiti</a> <a href="#" title="" class="overview-open"><i class="fa fa-pencil"></i></a></h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor aliquam felis, nec condimentum ipsum commodo id. Vivamus sit amet augue nec urna efficitur tincidunt. Vivamus consectetur aliquam lectus commodo viverra. Nunc eu augue nec arcu efficitur faucibus. Aliquam accumsan ac magna convallis bibendum. Quisque laoreet augue eget augue fermentum scelerisque. Vivamus dignissim mollis est dictum blandit. Nam porta auctor neque sed congue. Nullam rutrum eget ex at maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget vestibulum lorem.</p>
+										</div><!--user-profile-ov end-->
+									</div><!--product-feed-tab end-->
+									
+									
+									<div class="product-feed-tab" id="portfolio-dd">
+										<div class="portfolio-gallery-sec">
+											<h3>Portfolio</h3>
+											<div class="portfolio-btn">
+												<a href="#" title=""><i class="fas fa-plus-square"></i> Aggiungi portfolio</a>
+											</div>
+											<div class="gallery_pf">
+												<div class="row">
+													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
+														<div class="gallery_pt">
+															<img src="images/resources/pf-img1.jpg" alt="">
+															<a href="#" title=""><img src="images/all-out.png" alt=""></a>
+														</div><!--gallery_pt end-->
+													</div>
+													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
+														<div class="gallery_pt">
+															<img src="images/resources/pf-img2.jpg" alt="">
+															<a href="#" title=""><img src="images/all-out.png" alt=""></a>
+														</div><!--gallery_pt end-->
+													</div>
+													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
+														<div class="gallery_pt">
+															<img src="images/resources/pf-img3.jpg" alt="">
+															<a href="#" title=""><img src="images/all-out.png" alt=""></a>
+														</div><!--gallery_pt end-->
+													</div>
+													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
+														<div class="gallery_pt">
+															<img src="images/resources/pf-img4.jpg" alt="">
+															<a href="#" title=""><img src="images/all-out.png" alt=""></a>
+														</div><!--gallery_pt end-->
+													</div>
+													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
+														<div class="gallery_pt">
+															<img src="images/resources/pf-img5.jpg" alt="">
+															<a href="#" title=""><img src="images/all-out.png" alt=""></a>
+														</div><!--gallery_pt end-->
+													</div>
+													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
+														<div class="gallery_pt">
+															<img src="images/resources/pf-img6.jpg" alt="">
+															<a href="#" title=""><img src="images/all-out.png" alt=""></a>
+														</div><!--gallery_pt end-->
+													</div>
+													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
+														<div class="gallery_pt">
+															<img src="images/resources/pf-img7.jpg" alt="">
+															<a href="#" title=""><img src="images/all-out.png" alt=""></a>
+														</div><!--gallery_pt end-->
+													</div>
+													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
+														<div class="gallery_pt">
+															<img src="images/resources/pf-img8.jpg" alt="">
+															<a href="#" title=""><img src="images/all-out.png" alt=""></a>
+														</div><!--gallery_pt end-->
+													</div>
+													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
+														<div class="gallery_pt">
+															<img src="images/resources/pf-img9.jpg" alt="">
+															<a href="#" title=""><img src="images/all-out.png" alt=""></a>
+														</div><!--gallery_pt end-->
+													</div>
+													<div class="col-lg-4 col-md-4 col-sm-6 col-6">
+														<div class="gallery_pt">
+															<img src="images/resources/pf-img10.jpg" alt="">
+															<a href="#" title=""><img src="images/all-out.png" alt=""></a>
+														</div><!--gallery_pt end-->
+													</div>
+												</div>
+											</div><!--gallery_pf end-->
+										</div><!--portfolio-gallery-sec end-->
+									</div><!--product-feed-tab end-->
+								
+								</div><!--main-ws-sec end-->
+							</div>
+							
+						</div>
+					</div><!-- main-section-data end-->
+				</div> 
+			</div>
+		</main>
+
+		<footer>
+			<div class="footy-sec mn no-margin">
+				<div class="container">
+					<ul>
+							<li><a href="help-center.html" title="">Centro aiuto</a></li>
+											<li><a href="about.html" title="">Chi siamo</a></li>
+											<li><a href="#" title="">Privacy Policy</a></li>
+											<li><a href="#" title="">Community Guidelines</a></li>
+											<li><a href="#" title="">Cookies Policy</a></li>
+											<li><a href="#" title="">Carriera</a></li>
+											<li><a href="#" title="">Lingue</a></li>
+											<li><a href="#" title="">Copyright Policy</a></li>
+					</ul>
+					<p><img src="images/copy-icon2.png" alt="">Copyright 2019</p>
+					<img class="fl-rgt" src="images/logo2.png" alt="">
+				</div>
+			</div>
+		</footer><!--footer end-->
+
+		<div class="overview-box" id="overview-box">
+			<div class="overview-edit">
+				<h3>Chi sono</h3>
+				<span>5000 character left</span>
+				<form>
+					<textarea></textarea>
+					<button type="submit" class="save">Save</button>
+					<button type="submit" class="cancel">Cancel</button>
+				</form>
+				<a href="#" title="" class="close-box"><i class="la la-close"></i></a>
+			</div><!--overview-edit end-->
+		</div><!--overview-box end-->
+
+
+		<div class="overview-box" id="experience-box">
+			<div class="overview-edit">
+				<h3>Esperienze</h3>
+				<form>
+					<input type="text" name="subject" placeholder="Subject">
+					<textarea></textarea>
+					<button type="submit" class="save">Save</button>
+					<button type="submit" class="save-add">Save & Add More</button>
+					<button type="submit" class="cancel">Cancel</button>
+				</form>
+				<a href="#" title="" class="close-box"><i class="la la-close"></i></a>
+			</div><!--overview-edit end-->
+		</div><!--overview-box end-->
+
+		<div class="overview-box" id="education-box">
+			<div class="overview-edit">
+				<h3>Scuole</h3>
+				<form>
+					<input type="text" name="school" placeholder="School / University">
+					<div class="datepicky">
+						<div class="row">
+							<div class="col-lg-6 no-left-pd">
+								<div class="datefm">
+									<input type="text" name="from" placeholder="From" class="datepicker">	
+									<i class="fa fa-calendar"></i>
+								</div>
+							</div>
+							<div class="col-lg-6 no-righ-pd">
+								<div class="datefm">
+									<input type="text" name="to" placeholder="To" class="datepicker">
+									<i class="fa fa-calendar"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<input type="text" name="degree" placeholder="Degree">
+					<textarea placeholder="Description"></textarea>
+					<button type="submit" class="save">Save</button>
+					<button type="submit" class="save-add">Save & Add More</button>
+					<button type="submit" class="cancel">Cancel</button>
+				</form>
+				<a href="#" title="" class="close-box"><i class="la la-close"></i></a>
+			</div><!--overview-edit end-->
+		</div><!--overview-box end-->
+
+		<div class="overview-box" id="location-box">
+			<div class="overview-edit">
+				<h3>Location</h3>
+				<form>
+					<div class="datefm">
+						<select>
+							<option>Country</option>
+							<option value="pakistan">Pakistan</option>
+							<option value="england">England</option>
+							<option value="india">India</option>
+							<option value="usa">United Sates</option>
+						</select>
+						<i class="fa fa-globe"></i>
+					</div>
+					<div class="datefm">
+						<select>
+							<option>City</option>
+							<option value="london">London</option>
+							<option value="new-york">New York</option>
+							<option value="sydney">Sydney</option>
+							<option value="chicago">Chicago</option>
+						</select>
+						<i class="fa fa-map-marker"></i>
+					</div>
+					<button type="submit" class="save">Save</button>
+					<button type="submit" class="cancel">Cancel</button>
+				</form>
+				<a href="#" title="" class="close-box"><i class="la la-close"></i></a>
+			</div><!--overview-edit end-->
+		</div><!--overview-box end-->
+
+		<div class="overview-box" id="skills-box">
+			<div class="overview-edit">
+				<h3>Skills</h3>
+				<ul>
+					<li><a href="#" title="" class="skl-name">HTML</a><a href="#" title="" class="close-skl"><i class="la la-close"></i></a></li>
+					<li><a href="#" title="" class="skl-name">php</a><a href="#" title="" class="close-skl"><i class="la la-close"></i></a></li>
+					<li><a href="#" title="" class="skl-name">css</a><a href="#" title="" class="close-skl"><i class="la la-close"></i></a></li>
+				</ul>
+				<form>
+					<input type="text" name="skills" placeholder="Skills">
+					<button type="submit" class="save">Save</button>
+					<button type="submit" class="save-add">Save & Add More</button>
+					<button type="submit" class="cancel">Cancel</button>
+				</form>
+				<a href="#" title="" class="close-box"><i class="la la-close"></i></a>
+			</div><!--overview-edit end-->
+		</div><!--overview-box end-->
+
+	</div><!--theme-layout end-->
+
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/flatpickr.min.js"></script>
+<script type="text/javascript" src="lib/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
